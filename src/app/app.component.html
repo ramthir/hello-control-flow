@@ -1,7 +1,5 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Writing Clean & Performant Code with Control Flow in Angular</span>
-    <span class="navigation-spacer"></span>
     <button
       [matMenuTriggerFor]="menu"
       mat-icon-button
@@ -10,13 +8,23 @@
     >
       <mat-icon>menu</mat-icon>
     </button>
+    <span>Writing Clean & Performant Code with Control Flow in Angular</span>
+    <span class="navigation-spacer"></span>
   </mat-toolbar-row>
-
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item [routerLink]="['/directive/if']">If</button>
-    <button mat-menu-item [routerLink]="['/directive/if-else']">If Else</button>
-  </mat-menu>
 </mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="menuDirective">Directive</button>
+  <button mat-menu-item [matMenuTriggerFor]="menuControlFlow">Control Flow</button>
+</mat-menu>
+
+<mat-menu #menuDirective="matMenu">
+  <button mat-menu-item [routerLink]="['/directive/if']">If Condition</button>
+</mat-menu>
+
+<mat-menu #menuControlFlow="matMenu">
+  <button mat-menu-item [routerLink]="['/control-flow/if']">If Condition</button>
+</mat-menu>
 
 <div class="content-wrapper">
   <router-outlet></router-outlet>
