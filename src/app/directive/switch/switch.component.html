@@ -1,0 +1,16 @@
+<mat-form-field>
+  <mat-label>Select Access Level</mat-label>
+  <mat-select [formControl]="accessLevelControl">
+    <mat-option value="admin">Admin</mat-option>
+    <mat-option value="moderator">Moderator</mat-option>
+    <mat-option value="user">User</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<hr/>
+
+<div [ngSwitch]="accessLevelControl.value">
+  <app-admin-dashboard *ngSwitchCase="'admin'"/>
+  <app-moderator-dashboard *ngSwitchCase="'moderator'"/>
+  <app-user-dashboard *ngSwitchDefault/>
+</div>

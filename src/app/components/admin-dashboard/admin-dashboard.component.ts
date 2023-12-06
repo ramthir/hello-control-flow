@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './admin-dashboard.component.scss'
 })
 export class AdminDashboardComponent {
-
+  constructor() {
+    console.log('AdminDashboardComponent created!');
+  }
 }

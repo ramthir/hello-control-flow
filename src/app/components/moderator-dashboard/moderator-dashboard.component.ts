@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './moderator-dashboard.component.scss'
 })
 export class ModeratorDashboardComponent {
-
+  constructor() {
+    console.log('ModeratorDashboardComponent created!');
+  }
 }
