@@ -1,0 +1,7 @@
+<ul *ngIf="users.length; else emptyTemplate">
+  <li *ngFor="let user of users; trackBy: trackByUserId">{{ user.name }}</li>
+</ul>
+
+<ng-template #emptyTemplate>
+  <p>No users to display.</p>
+</ng-template>

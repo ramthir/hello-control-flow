@@ -10,4 +10,9 @@ export const DIRECTIVE_ROUTES: Route[] = [
     loadComponent: () =>
       import('./switch/switch.component').then((m) => m.SwitchComponent),
   },
+  {
+    path: 'for',
+    loadComponent: () =>
+      import('./for/for.component').then((m) => m.ForComponent),
+  },
 ];
