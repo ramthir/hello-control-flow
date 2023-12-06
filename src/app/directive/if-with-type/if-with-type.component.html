@@ -1,0 +1,5 @@
+<ng-container *ngFor="let employee of employees">
+  <app-manager-card *ngIf="employee.position === 'Manager'" [data]="employee"></app-manager-card>
+  <app-developer-card *ngIf="employee.position === 'Developer'" [data]="employee"></app-developer-card>
+  <app-teamlead-card *ngIf="employee.position === 'TeamLead'" [data]="employee"></app-teamlead-card>
+</ng-container>

@@ -1,0 +1,7 @@
+@for (employee of employees; track employee.id) {
+  @switch (employee.position) {
+    @case ('Manager') { <app-manager-card [data]="employee"></app-manager-card> }
+    @case ('Developer') { <app-developer-card [data]="employee"></app-developer-card> }
+    @case ('TeamLead') { <app-teamlead-card [data]="employee"></app-teamlead-card> }
+  }
+}

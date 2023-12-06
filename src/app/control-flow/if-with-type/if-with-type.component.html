@@ -1,0 +1,9 @@
+@for (employee of employees; track employee.id) {
+  @if (employee.position === 'Manager') {
+    <app-manager-card [data]="employee"></app-manager-card>
+  } @else if (employee.position === 'Developer') {
+    <app-developer-card [data]="employee"></app-developer-card>
+  } @else if (employee.position === 'TeamLead') {
+    <app-teamlead-card [data]="employee"></app-teamlead-card>
+  }
+}

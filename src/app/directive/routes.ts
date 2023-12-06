@@ -15,4 +15,18 @@ export const DIRECTIVE_ROUTES: Route[] = [
     loadComponent: () =>
       import('./for/for.component').then((m) => m.ForComponent),
   },
+  {
+    path: 'switch-with-type',
+    loadComponent: () =>
+      import('./switch-with-type/switch-with-type.component').then(
+        (m) => m.SwitchWithTypeComponent
+      ),
+  },
+  {
+    path: 'if-with-type',
+    loadComponent: () =>
+      import('./if-with-type/if-with-type.component').then(
+        (m) => m.IfWithTypeComponent
+      ),
+  },
 ];
