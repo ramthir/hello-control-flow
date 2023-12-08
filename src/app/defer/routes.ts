@@ -9,4 +9,8 @@ export const DEFER_ROUTES: Route[] = [
     path: 'placeholder',
     loadComponent: () => import('./placeholder/placeholder.component').then((m) => m.PlaceholderComponent),
   },
+  {
+    path: 'viewport',
+    loadComponent: () => import('./viewport/viewport.component').then((m) => m.ViewportComponent),
+  }
 ];
