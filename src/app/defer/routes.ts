@@ -31,5 +31,10 @@ export const DEFER_ROUTES: Route[] = [
       import('./interaction-with-button/interaction-with-button.component').then(
         (m) => m.InteractionWithButtonComponent
       ),
+  },
+  {
+    path: 'hover',
+    loadComponent: () =>
+      import('./hover/hover.component').then((m) => m.HoverComponent),
   }
 ];

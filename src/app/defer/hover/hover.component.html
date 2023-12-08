@@ -1,0 +1,10 @@
+<h1>Movies</h1>
+
+<!-- hover interaction trigger that will be triggered on mouse enter or focus in -->
+@defer(on hover) {
+<app-movies></app-movies>
+} @loading {
+  <span>Loading Movie list...</span>
+} @placeholder {
+<span>Movie list placeholder!</span>
+}
