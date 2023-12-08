@@ -36,5 +36,10 @@ export const DEFER_ROUTES: Route[] = [
     path: 'hover',
     loadComponent: () =>
       import('./hover/hover.component').then((m) => m.HoverComponent),
+  },
+  {
+    path: 'timer',
+    loadComponent: () =>
+      import('./timer/timer.component').then((m) => m.TimerComponent),
   }
 ];

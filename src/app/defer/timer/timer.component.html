@@ -1,0 +1,7 @@
+<h1>Movies</h1>
+<!-- trigger can also be timer, with a duration for the trigger. duration can be either milliseconds or seconds. -->
+@defer(on timer(500ms)) {
+<app-movies></app-movies>
+} @placeholder {
+<span>Movie list placeholder!</span>
+}
