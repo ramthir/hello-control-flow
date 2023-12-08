@@ -1,0 +1,7 @@
+<h1>Movies</h1>
+<!-- we can define prefetch condition to lazy load when the condition is met -->
+@defer(on interaction; prefetch on idle) {
+<app-movies></app-movies>
+} @placeholder {
+<span>Movie list placeholder!</span>
+}

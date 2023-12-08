@@ -41,5 +41,10 @@ export const DEFER_ROUTES: Route[] = [
     path: 'timer',
     loadComponent: () =>
       import('./timer/timer.component').then((m) => m.TimerComponent),
+  },
+  {
+    path: 'prefetch',
+    loadComponent: () =>
+      import('./prefetch/prefetch.component').then((m) => m.PrefetchComponent),
   }
 ];
