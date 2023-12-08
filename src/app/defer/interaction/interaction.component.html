@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+<button mat-raised-button color="primary" #open>Open</button>
+<br><br>
+
+@defer(on interaction(open)) {
+<app-movies></app-movies>
+} @loading {
+  <span>Loading Movie list...</span>
+<!-- by default the placeholder will be the interaction element -->
+} @placeholder {
+<span>Movie list placeholder!</span>
+}
