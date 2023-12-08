@@ -16,6 +16,7 @@
 <mat-menu #menu="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="menuDirective">Directive</button>
   <button mat-menu-item [matMenuTriggerFor]="menuControlFlow">Control Flow</button>
+  <button mat-menu-item [matMenuTriggerFor]="menuDefer">Defer</button>
 </mat-menu>
 
 <mat-menu #menuDirective="matMenu">
@@ -32,6 +33,10 @@
   <button mat-menu-item [routerLink]="['/control-flow/for']">For Loop</button>
   <button mat-menu-item [routerLink]="['/control-flow/switch-with-type']">Switch with Types</button>
   <button mat-menu-item [routerLink]="['/control-flow/if-with-type']">If with Types</button>
+</mat-menu>
+
+<mat-menu #menuDefer="matMenu">
+  <button mat-menu-item [routerLink]="['/defer/idle']">Default (On Idle)</button>
 </mat-menu>
 
 <div class="content-wrapper">

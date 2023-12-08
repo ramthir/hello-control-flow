@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./control-flow/routes').then((m) => m.CONTROL_FLOW_ROUTES),
   },
+  {
+    path: 'defer',
+    loadChildren: () =>
+      import('./defer/routes').then((m) => m.DEFER_ROUTES),
+  },
 ];
