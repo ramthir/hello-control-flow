@@ -1,4 +1,5 @@
 <ul>
+<!-- with the new control flow, track is made mandatory to make the performance better -->
 @for (user of users; track user.id) {
 <li>{{ user.name }}</li>
 } @empty { No users to display. }

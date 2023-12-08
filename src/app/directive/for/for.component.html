@@ -1,4 +1,6 @@
 <ul *ngIf="users.length; else emptyTemplate">
+  <!-- with the ngFor directive, trackBy is an optional parameter to uniquely
+    identify each item to improve the rendering performance of the list. -->
   <li *ngFor="let user of users; trackBy: trackByUserId">{{ user.name }}</li>
 </ul>
 
