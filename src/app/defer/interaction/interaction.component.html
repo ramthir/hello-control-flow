@@ -1,8 +1,6 @@
 <h1>Movies</h1>
-<button mat-raised-button color="primary" #open>Open</button>
-<br><br>
 
-@defer(on interaction(open)) {
+@defer(on interaction) {
 <app-movies></app-movies>
 } @loading {
   <span>Loading Movie list...</span>

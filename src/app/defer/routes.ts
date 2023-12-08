@@ -25,4 +25,11 @@ export const DEFER_ROUTES: Route[] = [
         (m) => m.InteractionComponent
       ),
   },
+  {
+    path: 'interaction-with-button',
+    loadComponent: () =>
+      import('./interaction-with-button/interaction-with-button.component').then(
+        (m) => m.InteractionWithButtonComponent
+      ),
+  }
 ];
