@@ -28,9 +28,9 @@ export const DEFER_ROUTES: Route[] = [
   {
     path: 'interaction-with-button',
     loadComponent: () =>
-      import('./interaction-with-button/interaction-with-button.component').then(
-        (m) => m.InteractionWithButtonComponent
-      ),
+      import(
+        './interaction-with-button/interaction-with-button.component'
+      ).then((m) => m.InteractionWithButtonComponent),
   },
   {
     path: 'hover',
@@ -46,5 +46,10 @@ export const DEFER_ROUTES: Route[] = [
     path: 'prefetch',
     loadComponent: () =>
       import('./prefetch/prefetch.component').then((m) => m.PrefetchComponent),
-  }
+  },
+  {
+    path: 'when',
+    loadComponent: () =>
+      import('./when/when.component').then((m) => m.WhenComponent),
+  },
 ];

@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+<mat-slide-toggle [formControl]="showMoviesControl">Show movies!</mat-slide-toggle>
+<br><br>
+
+@defer(when showMoviesControl.value) {
+<app-movies></app-movies>
+} @placeholder {
+<span>Movie list placeholder!</span>
+}
