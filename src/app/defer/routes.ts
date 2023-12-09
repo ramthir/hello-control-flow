@@ -58,5 +58,12 @@ export const DEFER_ROUTES: Route[] = [
       import('./prefetch-when/prefetch-when.component').then(
         (m) => m.PrefetchWhenComponent
       ),
+  },
+  {
+    path: 'multiple-triggers',
+    loadComponent: () =>
+      import('./multiple-triggers/multiple-triggers.component').then(
+        (m) => m.MultipleTriggersComponent
+      ),
   }
 ];
