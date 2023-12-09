@@ -52,4 +52,11 @@ export const DEFER_ROUTES: Route[] = [
     loadComponent: () =>
       import('./when/when.component').then((m) => m.WhenComponent),
   },
+  {
+    path: 'prefetch-when',
+    loadComponent: () =>
+      import('./prefetch-when/prefetch-when.component').then(
+        (m) => m.PrefetchWhenComponent
+      ),
+  }
 ];
